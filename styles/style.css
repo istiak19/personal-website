@@ -94,8 +94,13 @@
 
 .img-2 {
     position: absolute;
-    left: 350px;
+    left: 360px;
     top: 300px;
+}
+
+.img-2> img{
+    width: 100px;
+    height: 100px;
 }
 
 /* About styles */
