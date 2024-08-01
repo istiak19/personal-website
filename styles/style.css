@@ -20,19 +20,19 @@
 
 /* Shared styles */
 
-.color{
+.color {
     color: #3C3C3C;
 }
 
-.color-1{
+.color-1 {
     color: #FF8367;
 }
 
-.color-2{
+.color-2 {
     color: #363958;
 }
 
-.btn-primary{
+.btn-primary {
     color: #FFFFFF;
     font-weight: 500;
     padding: 15px 25px;
@@ -43,18 +43,19 @@
 
 /* Navbar styles */
 
-.navbar{
+.navbar {
     margin-top: 35px;
     margin-right: 140px;
 }
-.navbar> .nav-items{
+
+.navbar>.nav-items {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
 }
 
-.item{
+.item {
     list-style: none;
     font-weight: 500;
     color: #3C3C3C;
@@ -62,7 +63,7 @@
 
 /* Banner styles */
 
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +71,7 @@
     margin: 0 200px 0 130px;
 }
 
-.banner-title{
+.banner-title {
     font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -78,20 +79,20 @@
     margin-bottom: 15px;
 }
 
-.banner-desco{
+.banner-desco {
     margin-bottom: 30px;
 }
 
-.img-1>img{
+.img-1>img {
     width: 100%;
     height: 540px;
 }
 
-.banner-img{
+.banner-img {
     position: relative;
 }
 
-.img-2{
+.img-2 {
     position: absolute;
     left: 350px;
     top: 300px;
@@ -99,7 +100,7 @@
 
 /* About styles */
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,32 +113,148 @@
     height: 580px;
 }
 
-.a-title{
+.a-title {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.a-desco{
+.a-desco {
     margin-bottom: 15px;
 }
 
-@media screen and ( max-width:576px ) {
-    .navbar{
+/* LASTET WORKING PROJECT */
+
+.bg-color {
+    background-color: #F8F9FC;
+    margin-top: 50px;
+}
+
+.lastet-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+img {
+    width: 340px;
+    height: 210px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    background-color: #FFFFFF;
+    padding: 15px 13px;
+    border-radius: 19.74px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6C6C6C;
+}
+
+/* WORK INQUIRY */
+
+.bg {
+    background-image: url(../shapes/Group_33094_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px 160px 0;
+    border-radius: 30px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.text {
+    width: 100px;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Footer styles */
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.foot-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #696871;
+}
+
+.foot-title{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.foot{
+    margin-top: 25px;
+}
+
+.foot>img{
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width:576px) {
+    .navbar {
         margin: 35px 40px;
     }
 
     .banner,
-    .about {
+    .about,
+    .cards {
         flex-direction: column;
     }
 
     .banner,
-    .about{
+    .about {
         margin: 0 80px;
         gap: 30px;
     }
 
-    .img-2{
-        left: 200px;
+    .img-2 {
+        display: none;
+    }
+
+    .bg{
+        margin: 50px 0 0;
+    }
+
+    .title,
+    .lastet-title{
+        font-size: 1.5rem;
+    }
+
+    .work{
+        padding: 50px 20px;
+    }
+
+    .bg{
+        width: 100%;
     }
 }
